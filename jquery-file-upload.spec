@@ -2,7 +2,7 @@
 Summary:	File Upload library for jQuery
 Name:		jquery-%{plugin}
 Version:	6.7
-Release:	1
+Release:	0.2
 License:	MIT
 Group:		Applications/WWW
 Source0:	https://github.com/blueimp/jQuery-File-Upload/tarball/master/%{plugin}-%{version}.tgz
@@ -62,6 +62,7 @@ done
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_appdir}
 cp -a build/* $RPM_BUILD_ROOT%{_appdir}
+cp -a img $RPM_BUILD_ROOT%{_appdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
